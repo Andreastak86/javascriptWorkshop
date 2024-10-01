@@ -1,10 +1,7 @@
 //JavaScript tutorial
-
-document.getElementById("changeColor").addEventListener("click", function () {
-    const box = document.getElementById("box");
-    // Velger en tilfeldig farge fra en liste
-    const colors = ["red", "blue", "green", "purple", "orange"];
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-    box.style.backgroundColor = randomColor;
-    console.log("Fargen er endret!");
+document.getElementById("showName").addEventListener("click", function () {
+    const name = document.getElementById("nameInput").value;
+    const greetingMessage = `Hei, ${name}!`;
+    document.getElementById("greeting").innerText = greetingMessage;
+    console.log(greetingMessage);
 });
